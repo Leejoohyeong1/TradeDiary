@@ -62,9 +62,8 @@ class LoginViewController: UIViewController{
     
     @IBAction func createUser(_ sender: UIButton) {
         print("createUser")
-        let storyboryboard = UIStoryboard(name: "Lee", bundle: nil)
+        let storyboryboard = UIStoryboard(name: "Main", bundle: nil)
         let nextview: createUserViewController = storyboryboard.instantiateViewController(withIdentifier: "createUserViewController") as! createUserViewController
-        
         self.navigationController?.pushViewController(nextview, animated: true)
     }
     
